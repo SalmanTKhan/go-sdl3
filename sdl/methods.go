@@ -2707,7 +2707,6 @@ func (gamepad *Gamepad) NumTouchpadFingers(touchpad int32) int32 {
 // SDL_GetGamepadTouchpadFinger - Get the current state of a finger on a touchpad on a gamepad.
 // (https://wiki.libsdl.org/SDL3/SDL_GetGamepadTouchpadFinger)
 func (gamepad *Gamepad) TouchpadFinger(touchpad int32, finger int32, down *bool, x *float32, y *float32, pressure *float32) bool {
-	panic("not implemented")
 	return iGetGamepadTouchpadFinger(gamepad, touchpad, finger, down, x, y, pressure)
 }
 
